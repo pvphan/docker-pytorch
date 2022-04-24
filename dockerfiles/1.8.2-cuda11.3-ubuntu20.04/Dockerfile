@@ -37,7 +37,7 @@ RUN curl -sLo ~/miniconda.sh https://repo.continuum.io/miniconda/Miniconda3-py38
 # CUDA 11.3-specific steps
 RUN conda install -y -c conda-forge cudatoolkit=11.3.1 \
  && conda install -y -c pytorch \
-    "pytorch=1.8.1=py3.8_cuda11.3_cudnn8.0.5_0" \
+    "pytorch=1.8.2=py3.8_cuda11.3_cudnn8.0.5_0" \
     "torchvision=0.9.1=py38_cu111" \
  && conda clean -ya
 
